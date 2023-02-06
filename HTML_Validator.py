@@ -13,7 +13,7 @@ def validate_html(html):
     >>> validate_html('<strong>example')
     False
     '''
- 
+
     stack = []
     tags = _extract_tags(html)
     if len(tags) <= 1 and len(html) > 0:
